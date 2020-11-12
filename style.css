@@ -1,0 +1,38 @@
+:root {
+  --point-color: #1f6c97;
+  --light-color: #;
+  --main-color: #80656a;
+  --main-background-color: #f2e2da;
+  --point-background-color: #;
+}
+
+html {
+  color: var(--main-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  color: var(--point-color);
+  text-align: center;
+  align-item: center;
+  margin: 0px;
+  height: 80px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--main-background-color);
+}
+
+div {
+  background-color: var(--main-background-color);
+}
