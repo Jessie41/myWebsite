@@ -8,20 +8,26 @@
 
 html {
   color: var(--main-color);
-  font-family: 'Roboto', sans-serif;
 }
 
 body {
   margin: 0px;
   padding: 0px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
-
+header {
+  margin-top: 30px;
+  font-family: 'Amatic SC', cursive;
+}
 h1 {
   color: var(--point-color);
   text-align: center;
-
   margin: 0px;
   height: 80px;
+}
+.title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
 }
 
 .menu {
@@ -31,8 +37,20 @@ h1 {
   padding: 0px;
   margin: 0px;
   background-color: var(--main-background-color);
+  font-size: 20px;
+}
+
+.homebody {
+  margin: 0px 100px;
 }
 
 div {
-  background-color: var(--main-background-color);
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #1f6c97;
+  padding: 20px 0px;
+}
+
+li {
+  list-style: none;
 }
