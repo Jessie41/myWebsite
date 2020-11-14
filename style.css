@@ -1,54 +1,108 @@
 :root {
+  --dark-color: #172a3b;
   --point-color: #1f6c97;
-  --light-color: #;
-  --main-color: #80656a;
+  --light-color: #f7f9f7;
+  --nav-color: #80656a;
   --main-background-color: #f2e2da;
-  --point-background-color: #;
+  --text-color: #222726;
 }
 
 html {
   color: var(--main-color);
+  background-color: var(--light-color);
 }
 
 body {
-  margin: 0px;
+  margin: 0px 100px;
   padding: 0px;
   font-family: 'Open Sans Condensed', sans-serif;
+  color: var(--text-color);
 }
 header {
   margin-top: 30px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--dark-color);
 }
 h1 {
+  text-align: center;
+  margin: 0px;
+  height: 80px;
+}
+
+h2 {
   color: var(--point-color);
   text-align: center;
   margin: 0px;
   height: 80px;
 }
-.title {
+.name {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 20px;
 }
+section {
+  display: initial;
+}
 
-.menu {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  padding: 0px;
-  margin: 0px;
-  background-color: var(--main-background-color);
+section .nav {
+  height: 35px;
+  position: sticky;
+  top: 0;
+  padding: 0px 100px;
+  border-bottom: 1px solid var(--main-background-color);
+  border-top: 1px solid var(--main-background-color);
+  border-width: 1px;
+  background-color: var(--light-color);
+  border-color: var(--main-color);
   font-size: 20px;
 }
 
-.homebody {
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav a {
+  color: var(--nav-color);
+  text-decoration: none;
+}
+.nav a:hover {
+  cursor: pointer;
+  background-color: #a5cbc3;
+}
+.nav a:visited {
+  color: var(--nav-color);
+}
+
+.body {
   margin: 0px 100px;
 }
 
 div {
-  border-bottom-style: solid;
+  border-bottom-style: dotted;
   border-width: 1px;
-  border-color: #1f6c97;
+  border-color: var(--point-color);
   padding: 20px 0px;
+}
+
+button {
+  background-color: var(--main-background-color);
+  border: none;
+  color: black;
+  text-align: center;
+  padding: 10px, 10px;
+  font-size: 15px 32px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--point-color);
+  color: var(--light-color);
 }
 
 li {
